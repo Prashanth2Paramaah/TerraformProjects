@@ -1,13 +1,13 @@
-resource "aws_instance" "project1" {
+resource "aws_instance" "project-test" {
   ami           = "ami-0763cf792771fe1bd"
   instance_type = "t2.micro"
-  key_name      = "prashanth-key"
+  key_name      = "prashanth-key1"
 
   tags = {
-    Name = "Project1"
+    Name = "Project-test"
   }
 }
-resource "aws_key_pair" "prashanth-key" {
-  key_name   = "prashanth-key"
-  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDK97i6K8Onl/qxiuCYezL/GgT8WiHti4a66RwiEAem2O9lb6os3WUXybvOVeoCckABLR9x2qclToGD1oQuMlFvtCiCJCYmvjR87XWwV7jsWj2joS/N3beX7Xx6trdBZy2E/I5kQA4nvyPnrjP7KvsKuK3vE+NYWlagM2x3tpWsCychH21nkRCZLSsMrhLC1kjuje5EdD/YaXPWk213XC402x541JSqebpWNp7ImLpzKnSeUWDuVeanbEcMQxF1DqU1z/GgMd7h6nyQDlK99pyx3eNlKTqxfyyE/hqnF2cdsvXH2B67enl7VBHp50uLl2fstZAGkcobnOPXJD1CbSDf root@ip-172-31-45-126.ap-south-1.compute.internal"
+resource "aws_key_pair" "prashanth-key1" {
+  key_name   = "prashanth-key1"
+  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDFH2bIVgGuhOHOrDRCFORACgGaexiHY75HbEkR9p7y6EP8TOx53j9ztp6Gxq1/3MIC6D73dHpXTfLPOkMFV4BEtFTNa+C7KjY7x4tFUC0q8Ws2VOJkwLgua6QSVDHkjRdULqP+xj+T/gFIZek7zRS+Y91oAHHkuUpF2iTGD4axxnYRLeucb6H2B5C0NRqegVGS6t4W22MvMELKjdwG9DFF1+wYykMIMhDjpCBMaVsenbw735IbRMP/ZkxmplFXCW1OIZLTjIFTsDgUiYMV4CMTuS338T6Spg9M0Ai0PIsqsTTHRDC8wus41AdQFPROedU/Gw1LioRMUA+CGNMj1VKt root@ip-172-31-45-126.ap-south-1.compute.internal"
 }
