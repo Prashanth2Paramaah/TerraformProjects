@@ -16,7 +16,7 @@ connection {
   host = self.public_ip
   user = "centos"
   type = "ssh"
-  private_key = file("./prashanth-key1")
+  private_key = file("/home/centos/prashanth-key1")
 }
 }
 resource "aws_key_pair" "prashanth-key1" {
