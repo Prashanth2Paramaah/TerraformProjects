@@ -15,7 +15,7 @@ provisioner "remote-exec" {
 connection {
   host = self.public_ip
   user = "ec2-user"
-  type = ssh
+  type = "ssh"
   private_key = file("./prashanth-key1")
 }
 }
