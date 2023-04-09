@@ -8,8 +8,7 @@ resource "aws_instance" "project-test" {
   }
 provisioner "remote-exec" {
   inline = [
-    "yum update -y",
-    "yum install git",
+    "touch file1",
     ]
 }
 connection {
