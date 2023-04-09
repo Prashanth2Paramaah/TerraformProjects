@@ -6,6 +6,11 @@ resource "aws_instance" "project-test" {
   tags = {
     Name = "Project-test"
   }
+provisioner "remote-exec" {
+  inline = [
+    "sudo su -"
+    "yum update -y"
+    "yum install git"
 }
 resource "aws_key_pair" "prashanth-key1" {
   key_name   = "prashanth-key1"
