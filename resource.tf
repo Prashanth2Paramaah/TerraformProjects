@@ -8,7 +8,6 @@ resource "aws_instance" "project-test" {
   }
 provisioner "remote-exec" {
   inline = [
-    "sudo su -",
     "yum update -y",
     "yum install git",
     ]
