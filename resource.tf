@@ -1,5 +1,5 @@
 resource "aws_instance" "project-test" {
-  ami           = "ami-02eb7a4783e7e9317"
+  ami           = "ami-07d3a50bd29811cd1"
   instance_type = "t2.micro"
   key_name      = "prashanth-key1"
 
