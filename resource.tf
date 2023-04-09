@@ -9,6 +9,7 @@ resource "aws_instance" "project-test" {
 provisioner "remote-exec" {
   inline = [
     "touch file1",
+    "sudo yum install git -y"
     ]
 }
 connection {
