@@ -17,7 +17,7 @@ connection {
   host = self.public.ip
   user = "ec2-user"
   type = ssh
-  private_key = file(./prashanth-key1")
+  private_key = file("./prashanth-key1")
 }
 }
 resource "aws_key_pair" "prashanth-key1" {
