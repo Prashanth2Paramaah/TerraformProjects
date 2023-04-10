@@ -1,5 +1,5 @@
 resource "aws_instance" "project-test" {
-  ami           = "ami-07d3a50bd29811cd1"
+  ami           = "ami-0763cf792771fe1bd"
   instance_type = "t2.micro"
   key_name      = "prashanth-key1"
 
@@ -11,6 +11,8 @@ provisioner "remote-exec" {
     "sudo yum update -y",
     "touch file3",
     "sudo yum install git -y",
+    "echo 'git installation is successful'"
+    "sudo git --version"
     "touch file4"
     ]
 }
