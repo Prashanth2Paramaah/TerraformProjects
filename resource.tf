@@ -18,7 +18,7 @@ provisioner "remote-exec" {
 }
 connection {
   host = self.public_ip
-  user = "ec2-user"
+  user = "centos"
   type = "ssh"
   private_key = file("/home/centos/prashanth-key1")
 }
