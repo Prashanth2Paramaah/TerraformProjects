@@ -11,8 +11,15 @@ provisioner "remote-exec" {
     "sudo yum update -y",
     "touch file3",
     "sudo yum install git -y",
-    "echo 'git installation is successful'",
+    "echo 'Git Installation Is Successful'",
     "sudo git --version",
+    "sudo yum install -y yum-utils",
+    "sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo",
+    "sudo yum install docker-ce docker-ce-cli containerd.io -y",
+    "sudo systemctl start docker",
+    "sudo systemctl enable docker",
+    "echo 'Docker Installation Is Successful'",
+    "sudo docker --version",
     "touch file4"
     ]
 }
