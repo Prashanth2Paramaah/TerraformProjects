@@ -11,8 +11,8 @@ provisioner "remote-exec" {
     "sudo yum update -y",
     "touch file3",
     "sudo yum install git -y",
-    "echo 'git installation is successful'"
-    "sudo git --version"
+    "echo 'git installation is successful'",
+    "sudo git --version",
     "touch file4"
     ]
 }
