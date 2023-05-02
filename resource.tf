@@ -26,9 +26,9 @@ provisioner "remote-exec" {
 }
 connection {
   host = self.public_ip
-  user = "centos"
+  user = "ubuntu"
   type = "ssh"
-  private_key = file("/home/centos/prashanthkey")
+  private_key = file("/home/ubuntu/prashanthkey")
 }
 }
 resource "aws_key_pair" "prashanthkey" {
