@@ -1,6 +1,6 @@
 # Project I Centos server with git, docker installation
 resource "aws_instance" "project-test" {
-  ami           = "ami-0763cf792771fe1bd"
+  ami           = "ami-053b0d53c279acc90"
   instance_type = "t2.micro"
   #key_name      = "prashanthkey"
 
