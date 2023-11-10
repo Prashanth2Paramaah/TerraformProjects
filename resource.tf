@@ -10,7 +10,7 @@ resource "aws_instance" "project-test" {
 provisioner "remote-exec" {
   inline = [
     # Add Docker's official GPG key:
-    "touch file1"
+    "sudo touch file1"
 
     ]
 }
