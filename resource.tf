@@ -7,19 +7,18 @@ resource "aws_instance" "project-test" {
   tags = {
     Name = "Project-test"
   }
-#provisioner "remote-exec" {
-  #inline = [
-    #"sudo touch file1"
+provisioner "remote-exec" {
+  inline = [
+    "sudo touch file1"
 
-    #]
-#}
-#connection {
-  
-#host = self.public_ip
-  #user = "ubuntu"
-  #type = ssh
-  #private_key = file("/tmp/prashanthkey")
-#}
+    ]
+}
+connection {
+  host = self.public_ip
+  user = "ubuntu"
+  type = ssh
+  private_key = file("/home/ubuntu/prashanthkey")
+}
 }
 resource "aws_key_pair" "prashanthkey" {
   key_name   = "prashanthkey"
