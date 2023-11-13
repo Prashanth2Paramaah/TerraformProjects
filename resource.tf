@@ -16,7 +16,7 @@ provisioner "remote-exec" {
 connection {
   host = self.public_ip
   user = "ubuntu"
-  type = ssh
+  type = "ssh"
   private_key = file("/home/ubuntu/prashanthkey")
 }
 }
