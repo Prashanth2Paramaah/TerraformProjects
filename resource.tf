@@ -10,7 +10,6 @@ resource "aws_instance" "project-test" {
 provisioner "remote-exec" {
   inline = [
     "sudo touch file1"
-
     ]
 }
 connection {
