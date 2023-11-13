@@ -1,6 +1,6 @@
 # Project I ubuntu server with git, docker installation
 resource "aws_instance" "project-test" {
-  ami           = "ami-053b0d53c279acc90"
+  ami           = "ami-0fc5d935ebf8bc3bc"
   instance_type = "t2.micro"
   key_name      = "prashanthkey"
 
@@ -9,7 +9,6 @@ resource "aws_instance" "project-test" {
   }
 provisioner "remote-exec" {
   inline = [
-    # Add Docker's official GPG key:
     "sudo touch file1"
 
     ]
