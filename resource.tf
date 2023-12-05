@@ -1,7 +1,7 @@
 # Project I ubuntu server with git, docker installation
 resource "aws_instance" "project-test" {
   ami           = "ami-0fc5d935ebf8bc3bc"
-  instance_type = "t2.micro"
+  instance_type = "t2.medium"
   key_name      = "prashanthkey"
 
   tags = {
