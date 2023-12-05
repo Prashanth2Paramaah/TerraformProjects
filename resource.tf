@@ -14,9 +14,9 @@ provisioner "remote-exec" {
 }
 connection {
   host = self.public_ip
-  user = "ubuntu"
+  user = "root"
   type = "ssh"
-  private_key = file("/home/ubuntu/prashanthkey")
+  private_key = file("/root/prashanthkey")
 }
 }
 resource "aws_key_pair" "prashanthkey" {
