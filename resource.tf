@@ -18,7 +18,6 @@ provisioner "remote-exec" {
     "sudo apt-get update",
     "sudo apt-get install jenkins -y",
     "sudo systemctl status jenkins",
-    "sudo echo check the jenkins status",
     "sudo systemctl enable jenkins",
     "echo enabled jenkins server",
     "sudo systemctl start jenkins",
